@@ -30,24 +30,6 @@ while(ElementiAggiunti<len(lettereCopiate)):
             break
     IndiceIniziale+=1
 
-'''
-
-ArrayFinale=[]
-indice=0
-while len(lettereCopiate)!=0:
-    sum=0
-    indiceInterno=0
-    while sum<DimensioneBusta or indiceInterno==len(lettereCopiate):
-        if(sum+max(lettereCopiate)<=DimensioneBusta):
-            sum=+max(lettereCopiate)
-            ArrayFinale.append(max(lettereCopiate))
-            lettereCopiate.remove(max(lettereCopiate))
-            indiceInterno=+1
-    
-
-    lettereCopiate.remove(start)
-    indice=indice+1
-    '''
 result = '-'.join(map(str, ListaFinale))
 with open(base /"ListaFinale.txt", "w") as f:
   f.write(result)
