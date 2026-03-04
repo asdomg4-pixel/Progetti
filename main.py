@@ -26,6 +26,8 @@ while(ElementiAggiunti<len(lettereCopiate)):
             ListaFinale[IndiceIniziale].extend([lettereCopiate[indiceFinale]])
             indiceFinale -= 1
             ElementiAggiunti+=1
+            if(indiceFinale<=IndiceIniziale):
+                break
         else:
             break
     IndiceIniziale+=1
